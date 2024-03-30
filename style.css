@@ -1,0 +1,687 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:  Montserrat, sans-serif;
+}
+
+/*       -----------------------           Navbar Section         -----------------------        */
+
+
+
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all .1s ease-in-out;
+    background-color: #151416;
+    box-shadow: 0 -2px 15px hsla(0,0%,100%,.1);
+    padding: 1vw 8vw;
+    z-index: 99;
+}
+
+header img{
+    width: 12vw;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .navbar ul{
+    list-style: none;
+}
+
+header .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.first{
+    padding-left: 0;
+}
+
+header .navbar ul li a{
+    padding: 1vw 1.3vw;
+    text-decoration: none;
+    color: rgb(237, 235, 235);
+    font-size: 0.9vw;
+    font-weight: 500;
+    display: block;
+}
+
+header .navbar ul li ul{
+    position: absolute;
+    left: 0;
+    width: 28vw;
+    height: 10vw;
+    background-color: #151416;
+    display: none;
+}
+
+header .navbar ul li ul li{
+    width: 100%;
+}
+
+header .navbar ul li:hover ul{
+    display: initial;
+}
+
+header button{
+    text-decoration: none;
+    border: none;
+    padding: 0.9vw 1.8vw;
+    font-size: 1vw;
+    font-weight: 500;
+    line-height: 0.7vw;
+    margin-left: 1.5vw;
+    letter-spacing: 0.06em;
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0069d9;
+    border-radius: 25vh;
+
+}
+
+label #btn,
+label #cancel{
+    color: white;
+    float: right;
+    line-height: 5vw;
+    margin-right: 10vw;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+
+
+
+
+
+/*        ----------------------------------     Navbar Section    ------------------------------------   */
+
+
+
+/*        ------------------------------------   Section 1    ---------------------------------    */
+
+
+
+.section1{
+    /* width: 100%; */
+    height: 38vw;
+    color: rgb(237, 235, 235);
+    background-color: #151416;
+    position: relative;
+    padding: 0 8vw;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.left-sectiion1{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 14vw;
+    left: 16vw;
+}
+
+.left-sectiion1 h1{
+    font-size: 4.2vw;
+    padding-bottom: 1.6vw;
+}
+
+.left-sectiion1 p{
+    font-size: 1.4vw;
+    font-weight: 100;
+    width: 30vw;
+    line-height: 1.6vw;
+    letter-spacing: 0.01em;
+    color: rgb(212, 212, 212);
+}
+
+.right-section img{
+    position: absolute;
+    width: 37vw;
+    height: 41vw;
+}
+
+
+
+.animate1{
+    z-index: 9;
+    opacity: 0;
+    transform: translateX(-20vw);
+    transition: 0.5s;
+    animation: movelefttoright 1s linear forwards;
+}
+
+@keyframes movelefttoright{
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animate2{
+    opacity: 0;
+    z-index: 7;
+    transform: translateX(10vw);
+    transition: 0.5s;
+    animation: moverighttoleft 1s linear forwards;
+}
+
+@keyframes moverighttoleft{
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/*    -----------------------------      Section1     ----------------------      */
+
+/*    -----------------------------      Section2     ----------------------      */
+.section2{
+    padding: 8vw 18vw;
+    text-align: center;
+    background-color: white;
+    border-bottom: 1px solid rgb(165, 165, 165);
+}
+
+.section2 p{
+    color: rgb(91, 90, 90);
+    text-align: center;
+    font-size: 1.1vw;
+    font-weight: 300;
+    letter-spacing: 0.06em;
+    line-height: 1.6vw;
+    padding-bottom: 4.2vw;
+}
+
+.section2 button{
+    padding: 1vw 2.2vw;
+    font-size: 0.9vw;
+    font-weight: 400;
+    line-height: 0.7vw;
+    margin-left: 1.5vw;
+    letter-spacing: 0.06em;
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0069d9;
+    border-radius: 25vh;
+    border: none;
+}
+
+.btn:hover{
+    background-color: #033b77;
+}
+
+
+
+
+/*    -----------------------------      Section2     ----------------------      */
+
+/*    -----------------------------      Section3     ----------------------      */
+
+
+
+
+
+.section3{
+    padding: 6.5vw 10vw 0 10vw;
+    background-color: rgb(248, 245, 245);
+}
+
+.heading{
+    display: flex;
+    text-align: center;
+}
+
+.heading p{
+    margin-top: 0.6vw;
+    width: 7.5vw;
+    height: 0.3vh;
+    background-color: orangered;
+}
+
+.heading h2{
+    margin-left: 1vw;
+    color: rgb(255, 25, 0);
+    letter-spacing: 0.02;
+    font-size: 1.3vw;
+    font-weight: 700;
+}
+
+.products{
+    margin: 8vw 0 0 3vw;
+    width: 73vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 5.5vw;
+}
+
+.product-container .product-img{
+    transition: 0.5s;
+}
+
+.product-info{
+    height: 20vw;
+    padding: 3vw 3.5vw 6.5vw 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+}
+
+.product-info1{
+    padding-left: 3vw;
+    padding-top: 4vw;
+    padding-right: 0.5vw;
+}
+
+
+.product-info h6{
+    font-size: 0.9vw;
+    font-weight: 100;
+    color: rgb(107, 107, 107);
+}
+
+.product-info h1{
+    font-size: 2.8vw;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    line-height: 2.8vw;
+    color: rgb(26, 26, 26);
+    margin: 0.8vw 0 1vw 0;
+}
+
+.product-info p{
+    font-size: 1vw;
+    color: rgb(158, 157, 157);
+    letter-spacing: 0.07vw;
+    line-height: 1.4vw;
+    margin: 0 0 2vw 2.5vw;
+}
+
+.more-info{
+    display: flex;
+    margin-left: 2.5vw;
+}
+
+.more-info h4{
+    color: #0069d9;
+    font-size: 1vw;
+}
+
+.more-info span{
+    color: #0069d9;
+    font-size: 1.3vw;
+}
+
+.animate3{
+    opacity: 0;
+    transform: translate(-85px, -80px);
+    transition: 0.5s;
+    animation: moveright 1s linear forwards;
+}
+
+@keyframes moveright{
+    100%{
+        opacity: 1;
+        transform: translate(-65px, -70px);        
+    }
+}
+
+.animate4{
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: 0.5s;
+    animation: lefttoright 1s linear forwards;
+}
+
+@keyframes lefttoright{
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animate5{
+    opacity: 0;
+    transform: translate(80px, -160px);
+    transition: 0.5s;
+    animation: righttoleft 1s linear forwards;
+}
+
+@keyframes righttoleft{
+    100%{
+        opacity: 1;
+        transform: translate(80px, -100px);
+    }
+}
+
+
+
+/*         ---------------------------         section3          ----------------------     */
+
+
+
+/*         ---------------------------         section 4        ------------------------    */
+
+.section4{
+    padding: 0vw 10vw 8vw 10vw;
+    background-color: rgb(248, 245, 245);
+}
+
+.work-container {
+    margin-top: 4vw;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container{
+    position: relative;
+    width: 24vw;
+    height: 20vw;
+    box-shadow: 0 4px 15px -1px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.container img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    -webkit-filter:brightness(100%);
+}
+
+.container-info{
+    height: 5.5vw;
+    background: white; 
+    position: absolute; 
+    bottom:0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw;
+    transition: 0.2s;
+}
+
+.container:hover{
+    box-shadow: 0 4px 56px 1px rgba(0, 0, 0, 0.4);
+}
+
+.container:hover img{
+    -webkit-filter: brightness(50%);
+    -webkit-transition: all 1s ease;
+}
+
+.container:hover .container-info {
+    height: 7.5vw;
+}
+
+.container-info h5{
+    font-size: 1vw;
+    color: rgb(86, 85, 85);
+    font-weight: 500;
+}
+
+.container-info h3{
+    text-align: start;
+    font-size: 1.5vw;
+    padding: 0.2vw 0;
+}
+
+.container-info span{
+    font-size: 1vw;
+    font-weight: 500;
+    color: #0069d9;
+    font-weight: 600;
+}
+
+.animate6{
+    opacity: 0;
+    transform: translateY(45px);
+    transition: 0.5s;
+    animation: bottomtotop 1s linear both;
+}
+
+@keyframes bottomtotop{
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/*            --------------------------------         section4            -------------------        */
+
+
+
+/*            --------------------------------         section5          -------------------        */
+
+
+
+
+
+.section5{
+    padding: 8vw 10vw 7vw 10vw;
+    background-color: white;    
+}
+
+.testimonials-cards{
+    margin-top: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.person{
+    margin: 0 0.5vw;
+    padding: 0 0.5vw;
+    width: 35.5vw;
+    height: 20vw;
+    border-radius: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid rgb(202, 202, 202);
+}
+
+.person img{
+    border-radius: 50%;
+    margin-bottom: 1.5vw;
+}
+
+.person-info{
+    height: 9vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.person-info h4{
+    font-size: 1.1vw;
+    font-weight: 600;
+}
+
+.person-info h5{
+    text-transform: uppercase;
+    font-size: 0.9vw;
+    font-weight: 400;
+    color: rgb(89, 88, 88);
+}
+
+.person-info p{
+    margin: 1vw 2.5vw;
+    font-weight: 400;
+    font-size: 1.1vw;
+    color: rgb(130, 130, 130);
+    letter-spacing: 0.02em;
+    line-height: 1.3vw;
+    text-align: center;
+}
+
+.animate7{
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.5 ease-in-out;   
+    animation: zoomout 1s linear forwards;
+}
+
+@keyframes zoomout{
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/*              -----------------------          section5       ------------------------      */
+
+
+/*              -----------------------          Footer          -----------------------       */
+
+
+
+.footer{
+    padding: 6vw 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.footer h1{
+    font-size: 2.1vw;
+    font-weight: 700;
+    margin-bottom: 2vw;
+}
+
+.footer button{
+    padding: 0.9vw 2.2vw;
+    background-color: #0069d9;
+    border-color: #0069d9;
+    border-radius: 2vw;
+    color: white;
+    font-size: 1vw;
+    font-weight: 100;
+    margin-bottom: 2vw;
+    border: none;
+}
+
+.bottom-container{
+    width: 75vw;
+    height: 10vw;
+    padding: 0 2vw;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.left-container{
+    height: 4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.left-container .one{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.one p{
+    margin-right: 1.2vw;
+    font-size: 1vw;
+    font-weight: 100;
+    color: rgb(189, 188, 188);
+}
+
+.second h6{
+     font-size: 0.9vw;
+     font-weight: 100;
+     margin: 0.9vw 0 1.2vw 0;
+     color: rgb(189, 188, 188);
+}
+.right-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 12vw;
+}
+
+.right-container a{
+    width: 2vw;
+}
+
+.right-container a i{
+    font-size: 1.5vw;
+    color: white;
+}
+
+
+
+
+/*             -----------------------------     Footer        ----------------------------       */
+
+
+/*             -----------------------------    Responsive Code    ---------------------------    */
+
+@media (max-width:1000px) {
+    header{
+        padding: 1vw 10vw;
+    }
+
+    header img{
+        width: 10vw;
+    }  
+
+
+}
+
+
+@media (max-width: 900px) {
+    header{
+        padding: 1vw 8vw;
+    }
+    header img{
+        width: 8vw;
+    }
+}
+
+
+
+
+
+
